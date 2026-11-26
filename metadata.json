@@ -1,0 +1,8 @@
+{
+  "name": "DIG.MON",
+  "description": "Aventura Arcade y Batalla Táctica Digimon · Temporada 1",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

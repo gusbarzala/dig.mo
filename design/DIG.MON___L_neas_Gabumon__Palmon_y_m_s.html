@@ -1,0 +1,347 @@
+<!DOCTYPE html><html lang="es"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIG.MON — Líneas Gabumon, Palmon y más</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="2292ee7c6c97a428===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'arcade-yellow': '#FFD400',
+        'digivice-orange': '#FF6B00',
+        'gabumon-blue': '#005CBA',
+        'ink-black': '#1A1600',
+        'light-primary': '#005CBA',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#D7E3FF',
+        'light-on-primary-container': '#001B3E',
+        'light-secondary': '#FF6B00',
+        'light-on-secondary': '#1A0800',
+        'light-secondary-container': '#FFDBCC',
+        'light-on-secondary-container': '#351000',
+        'light-surface': '#FFD400',
+        'light-on-surface': '#1A1600',
+        'light-surface-container': '#FFF0C6',
+        'light-surface-container-low': '#FFE177',
+        'light-surface-container-high': '#FFFBFF',
+        'light-on-surface-variant': '#3B2F00',
+        'light-outline': '#1A1600',
+        'light-outline-variant': '#715D00',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'dark-primary': '#7BABFF',
+        'dark-on-primary': '#001B3E',
+        'dark-primary-container': '#00458E',
+        'dark-on-primary-container': '#D7E3FF',
+        'dark-secondary': '#FF8C52',
+        'dark-on-secondary': '#351000',
+        'dark-secondary-container': '#7A3000',
+        'dark-on-secondary-container': '#FFDBCC',
+        'dark-surface': '#1A1600',
+        'dark-on-surface': '#FFE177',
+        'dark-surface-container': '#231B00',
+        'dark-surface-container-low': '#201C02',
+        'dark-surface-container-high': '#3B2F00',
+        'dark-on-surface-variant': '#EDE3B7',
+        'dark-outline': '#FFD400',
+        'dark-outline-variant': '#715D00',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+      },
+      borderRadius: {
+        'none': '0px',
+        'sm': '2px',
+        'DEFAULT': '4px',
+        'md': '8px',
+        'lg': '12px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '40px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Press Start 2P"', 'sans-serif'],
+        'headline': ['"Press Start 2P"', 'sans-serif'],
+        'title': ['"Poppins"', 'sans-serif'],
+        'body': ['"Poppins"', 'sans-serif'],
+        'label': ['"Poppins"', 'sans-serif'],
+        'mono': ['"Spline Sans Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '52px', letterSpacing: '1px', fontWeight: '400' }],
+        'display-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '0.5px', fontWeight: '400' }],
+        'headline-lg': ['24px', { lineHeight: '34px', letterSpacing: '0.5px', fontWeight: '400' }],
+        'headline-lg-mobile': ['18px', { lineHeight: '26px', letterSpacing: '0.5px', fontWeight: '400' }],
+        'title-lg': ['16px', { lineHeight: '24px', letterSpacing: '0.25px', fontWeight: '400' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '700' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '500' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '500' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.5px', fontWeight: '400' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.5px', fontWeight: '700' }],
+        'mono-md': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '600' }],
+      },
+      transitionDuration: {
+        'button-press': '80ms',
+        'surface-enter': '200ms',
+      },
+      transitionDelay: {
+        'button-press': '0ms',
+        'surface-enter': '0ms',
+      },
+      transitionTimingFunction: {
+        'button-press': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&amp;family=Press+Start+2P&amp;family=Spline+Sans+Mono:wght@600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      line-height: 1 !important;
+      box-sizing: content-box;
+      overflow: hidden;
+      white-space: nowrap;
+      direction: ltr;
+      vertical-align: middle;
+    }
+    .arcade-shadow { box-shadow: 4px 4px 0px #1A1600; }
+    .arcade-shadow-sm { box-shadow: 3px 3px 0px #1A1600; }
+    .arcade-shadow:active, .arcade-shadow-sm:active { box-shadow: 1px 1px 0px #1A1600; }
+  </style>
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased">
+  <div class="min-h-screen w-full max-w-md mx-auto px-page-margin py-gutter-md flex flex-col justify-between gap-gutter-md">
+
+    <!-- Top contextual header -->
+    <header class="flex items-center justify-between gap-gutter-sm">
+      <a href="../digevol/Digevol.html" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" aria-label="Volver a línea Agumon" class="inline-flex items-center justify-center w-11 h-11 bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow-sm transition-transform duration-button-press ease-button-press hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-light-outline">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </a>
+
+      <div class="inline-flex items-center gap-gutter-xs px-gutter-md py-gutter-xs bg-light-surface-container border-4 border-light-outline rounded arcade-shadow-sm">
+        <span class="font-mono text-mono-md text-light-on-surface tabular-nums uppercase" data-design-text-token="mono-md">LÍNEAS · DIGIMON</span>
+      </div>
+
+      <button id="sound-toggle" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" type="button" aria-label="Alternar sonido" class="inline-flex items-center justify-center w-11 h-11 bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow-sm transition-transform duration-button-press ease-button-press hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-light-outline">
+        <span id="sound-icon" class="material-symbols-outlined">volume_up</span>
+      </button>
+    </header>
+
+    <!-- Main Evolution Lines -->
+    <main class="flex-1 flex flex-col gap-gutter-md">
+      <div class="flex flex-col gap-gutter-xs">
+        <h1 data-design-text-token="headline-lg-mobile" class="font-headline text-headline-lg-mobile text-light-on-surface uppercase">OTRAS LÍNEAS</h1>
+        <p data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface-variant text-pretty">
+          Explora la línea de Gabumon, Palmon, Biyomon, Tentomon, Gomamon, Patamon y Gatomon.
+        </p>
+      </div>
+
+      <!-- Partner Selector Tabs -->
+      <nav aria-label="Elegir línea evolutiva" class="flex flex-wrap gap-gutter-xs">
+        <button type="button" data-line="gabumon" class="line-tab px-gutter-sm py-gutter-xs bg-light-primary text-light-on-primary border-2 border-light-outline rounded font-label text-label-sm">Gabumon</button>
+        <button type="button" data-line="palmon" class="line-tab px-gutter-sm py-gutter-xs bg-light-surface-container text-light-on-surface border-2 border-light-outline rounded font-label text-label-sm">Palmon</button>
+        <button type="button" data-line="biyomon" class="line-tab px-gutter-sm py-gutter-xs bg-light-surface-container text-light-on-surface border-2 border-light-outline rounded font-label text-label-sm">Biyomon</button>
+        <button type="button" data-line="tentomon" class="line-tab px-gutter-sm py-gutter-xs bg-light-surface-container text-light-on-surface border-2 border-light-outline rounded font-label text-label-sm">Tentomon</button>
+        <button type="button" data-line="gomamon" class="line-tab px-gutter-sm py-gutter-xs bg-light-surface-container text-light-on-surface border-2 border-light-outline rounded font-label text-label-sm">Gomamon</button>
+        <button type="button" data-line="patamon" class="line-tab px-gutter-sm py-gutter-xs bg-light-surface-container text-light-on-surface border-2 border-light-outline rounded font-label text-label-sm">Patamon</button>
+        <button type="button" data-line="gatomon" class="line-tab px-gutter-sm py-gutter-xs bg-light-surface-container text-light-on-surface border-2 border-light-outline rounded font-label text-label-sm">Gatomon</button>
+      </nav>
+
+      <!-- Active Preview Card -->
+      <article class="bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow p-gutter-md flex items-center gap-gutter-md">
+        <div class="w-20 h-20 shrink-0 overflow-hidden rounded-sm border-2 border-light-outline bg-light-surface">
+          <img id="line-preview-img" src="https://lh3.googleusercontent.com/aida/ALJJyrD7XyDkn-VF-LqjuhLeAQTWsOnkK5msBs_9eeQ-RwNNt3piGNjZJtQOiQgHC-MkoFn5WmGy4grOnoNBieXkvGFBff2sPedT1ihk_2uzVk5uTom0ponYznwIrSGQsPfaubOa5yi_oGVO5iih7PVibWg3K9L0LwfNZQ9-GEUBDrkH5bZ3HSfrtLeH8hvbeReLPhWJ7PffdJ58-ySBq0veD1MmRx1dmKqjkb14IFhWpUcF60liMkWMaq0" alt="Gabumon" class="w-full h-full object-cover block" data-stitch-original-src="6b9899683f4438bb===../../images/gabumon_battle.jpg">
+        </div>
+        <div class="flex flex-col gap-gutter-xs min-w-0">
+          <span id="line-stage-badge" data-design-text-token="mono-md" class="font-mono text-mono-md text-light-primary uppercase tabular-nums">NOVATO · MATT</span>
+          <h2 id="line-evo-name" data-design-text-token="title-lg" class="font-headline text-title-lg text-light-on-surface">GABUMON</h2>
+          <p id="line-evo-attack" data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface-variant">Ataque: Fuego Azul</p>
+        </div>
+      </article>
+
+      <!-- 6-Stage Evolution Grid -->
+      <section aria-label="Etapas evolutivas" class="grid grid-cols-2 gap-gutter-sm">
+        <button type="button" data-idx="0" class="stage-btn px-gutter-sm py-gutter-sm bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow-sm font-label text-label-sm text-left"><span data-design-text-token="label-sm">1. Punimon</span></button>
+        <button type="button" data-idx="1" class="stage-btn px-gutter-sm py-gutter-sm bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow-sm font-label text-label-sm text-left"><span data-design-text-token="label-sm">2. Tsunomon</span></button>
+        <button type="button" data-idx="2" class="stage-btn px-gutter-sm py-gutter-sm bg-light-primary text-light-on-primary border-4 border-light-outline rounded arcade-shadow-sm font-label text-label-sm text-left"><span data-design-text-token="label-sm">3. Gabumon</span></button>
+        <button type="button" data-idx="3" class="stage-btn px-gutter-sm py-gutter-sm bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow-sm font-label text-label-sm text-left"><span data-design-text-token="label-sm">4. Garurumon</span></button>
+        <button type="button" data-idx="4" class="stage-btn px-gutter-sm py-gutter-sm bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow-sm font-label text-label-sm text-left"><span data-design-text-token="label-sm">5. WereGarurumon</span></button>
+        <button type="button" data-idx="5" class="stage-btn px-gutter-sm py-gutter-sm bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow-sm font-label text-label-sm text-left"><span data-design-text-token="label-sm">6. MetalGarurumon</span></button>
+      </section>
+    </main>
+
+    <!-- Status Footer -->
+    <footer aria-live="polite" class="bg-light-surface-container border-4 border-light-outline rounded arcade-shadow-sm px-gutter-md py-gutter-sm">
+      <p id="line-status" data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface text-pretty">
+        Línea de Gabumon (Niño: Matt). Toca cualquier etapa.
+      </p>
+    </footer>
+
+  </div>
+
+  <script data-stitch-original-script="6b9899683f4438bb===../../images/gabumon_battle.jpg|||6b9899683f4438bb===../../images/gabumon_battle.jpg|||6b9899683f4438bb===../../images/gabumon_battle.jpg|||27a32f91b71c50bc===../../images/garurumon_evo.jpg|||fb25819e56f17d61===../../images/weregarurumon_evo.jpg|||a2e4d4260b9975cd===../../images/metalgarurumon_evo.jpg|||2423585add89e33d===../../images/palmon_partner.jpg|||2423585add89e33d===../../images/palmon_partner.jpg|||2423585add89e33d===../../images/palmon_partner.jpg|||a30eacad45f8c743===../../images/togemon_evo.jpg|||831f69a7e691cfc2===../../images/lillymon_evo.jpg|||831f69a7e691cfc2===../../images/lillymon_evo.jpg|||e8d8e42963a43db7===../../images/biyomon_partner.jpg|||e8d8e42963a43db7===../../images/biyomon_partner.jpg|||e8d8e42963a43db7===../../images/biyomon_partner.jpg|||4af9c027217de768===../../images/birdramon_evo.jpg|||92998a78e145cd5e===../../images/garudamon_evo.jpg|||92998a78e145cd5e===../../images/garudamon_evo.jpg|||b6c0aa2a1be70c17===../../images/tentomon_partner.jpg|||b6c0aa2a1be70c17===../../images/tentomon_partner.jpg|||b6c0aa2a1be70c17===../../images/tentomon_partner.jpg|||daed25c60295d999===../../images/kabuterimon_evo.jpg|||19e76816385be232===../../images/megakabuterimon_evo.jpg|||19e76816385be232===../../images/megakabuterimon_evo.jpg|||cc16f1a14da50a00===../../images/gomamon_partner.jpg|||cc16f1a14da50a00===../../images/gomamon_partner.jpg|||cc16f1a14da50a00===../../images/gomamon_partner.jpg|||38975260d0198432===../../images/ikkakumon_evo.jpg|||31af5a0be4cb9d3a===../../images/zudomon_evo.jpg|||31af5a0be4cb9d3a===../../images/zudomon_evo.jpg|||0d6c45b005a96aa2===../../images/patamon_partner.jpg|||0d6c45b005a96aa2===../../images/patamon_partner.jpg|||0d6c45b005a96aa2===../../images/patamon_partner.jpg|||3d93bc61ea9e88f6===../../images/angemon_evo.jpg|||3d93bc61ea9e88f6===../../images/angemon_evo.jpg|||3d93bc61ea9e88f6===../../images/angemon_evo.jpg|||f9c1210d9195a320===../../images/gatomon_partner.jpg|||f9c1210d9195a320===../../images/gatomon_partner.jpg|||f9c1210d9195a320===../../images/gatomon_partner.jpg|||f9c1210d9195a320===../../images/gatomon_partner.jpg|||b67c5430f4cc1f80===../../images/angewomon_evo.jpg|||b67c5430f4cc1f80===../../images/angewomon_evo.jpg">
+    (function () {
+      var soundBtn = document.getElementById('sound-toggle');
+      var soundIcon = document.getElementById('sound-icon');
+      var muted = false;
+      if (soundBtn && soundIcon) {
+        soundBtn.addEventListener('click', function () {
+          muted = !muted;
+          soundIcon.textContent = muted ? 'volume_off' : 'volume_up';
+        });
+      }
+
+      var LINES = {
+        gabumon: {
+          kid: 'MATT',
+          stages: [
+            { name: 'PUNIMON', stage: 'BEBÉ I · MATT', atk: 'Burbujas Ácidas', img: 'https://lh3.googleusercontent.com/aida/ALJJyrD7XyDkn-VF-LqjuhLeAQTWsOnkK5msBs_9eeQ-RwNNt3piGNjZJtQOiQgHC-MkoFn5WmGy4grOnoNBieXkvGFBff2sPedT1ihk_2uzVk5uTom0ponYznwIrSGQsPfaubOa5yi_oGVO5iih7PVibWg3K9L0LwfNZQ9-GEUBDrkH5bZ3HSfrtLeH8hvbeReLPhWJ7PffdJ58-ySBq0veD1MmRx1dmKqjkb14IFhWpUcF60liMkWMaq0' },
+            { name: 'TSUNOMON', stage: 'BEBÉ II · MATT', atk: 'Burbujas', img: 'https://lh3.googleusercontent.com/aida/ALJJyrD7XyDkn-VF-LqjuhLeAQTWsOnkK5msBs_9eeQ-RwNNt3piGNjZJtQOiQgHC-MkoFn5WmGy4grOnoNBieXkvGFBff2sPedT1ihk_2uzVk5uTom0ponYznwIrSGQsPfaubOa5yi_oGVO5iih7PVibWg3K9L0LwfNZQ9-GEUBDrkH5bZ3HSfrtLeH8hvbeReLPhWJ7PffdJ58-ySBq0veD1MmRx1dmKqjkb14IFhWpUcF60liMkWMaq0' },
+            { name: 'GABUMON', stage: 'NOVATO · MATT', atk: 'Fuego Azul', img: 'https://lh3.googleusercontent.com/aida/ALJJyrD7XyDkn-VF-LqjuhLeAQTWsOnkK5msBs_9eeQ-RwNNt3piGNjZJtQOiQgHC-MkoFn5WmGy4grOnoNBieXkvGFBff2sPedT1ihk_2uzVk5uTom0ponYznwIrSGQsPfaubOa5yi_oGVO5iih7PVibWg3K9L0LwfNZQ9-GEUBDrkH5bZ3HSfrtLeH8hvbeReLPhWJ7PffdJ58-ySBq0veD1MmRx1dmKqjkb14IFhWpUcF60liMkWMaq0' },
+            { name: 'GARURUMON', stage: 'CAMPEÓN · MATT', atk: 'Aullido de Fuego', img: 'https://lh3.googleusercontent.com/aida/ALJJyrDrvWiXi_C4-OIuesqzO8dNXm5gXRVw3c6-EmjWpW4u-sdRSHG58DKCpGXBxfBdvAq_4MVnt1anctr8BaJr-EYn_Em3sWD9SORrvYMRl4xiL7X0yLKwdMUNahWOdf1vBWOrNx4GOxezWcGjLQFEJKoZkYTwwxAbhuqSh-VMaIiJQTkT4yivX54pYHO35fnnKu7HC9n4wducemjmnm36La1RxHT-Kh5hoH7HVjIG1FxuxLxejwcg4g' },
+            { name: 'WEREGARURUMON', stage: 'ULTRA · MATT', atk: 'Garra de Lobo', img: 'https://lh3.googleusercontent.com/aida/ALJJyrAxmFdhbqAxRhtPn8ACn9AMNr9_UNjuyaaVIXWd_qwBc1abTSMyMGGKV27Pt5R0svqq_MjcOAoEf6O7jllofMg4tRyzDYnzBRjzPbrsP0OzcQXjRkGX3Kynt36pQCpzoapTZAiMQTWL9CaRqNxt0S9UFDm2GmFxX-xGgaFUjYKU93POWwnpBH4BXf_y-TNkex6uiiPCTigc1uU1SukhsVnqtshY_3yiLZQkHWx0AfZzoTgib7pmTggXEHLA' },
+            { name: 'METALGARURUMON', stage: 'MEGA · MATT', atk: 'Aliento Congelante', img: 'https://lh3.googleusercontent.com/aida/ALJJyrADxgT0Lxf7_DTX_Nc6TKCPXK8xRAFZvgJjLi2CLX-itXrLrgZXRhV9r1hNfKgSoy59BKPduqaBdLloyq33QbJv7tsk06nURnsJbZOuA1A3VDNWFJHV7PKicpdrmF6n9dL4XqVICrAdL3c5YpIW22da8wt__HRPOXsyOHUYdS0aTw-PuEifhZEleW3tjIy08qBFbvmM-H_o88pFcQlZaJGLbma0ZgRfbCM3D7NZdScXS5FByMGpKWszOd7sLQ' }
+          ]
+        },
+        palmon: {
+          kid: 'MIMI',
+          stages: [
+            { name: 'YURAMON', stage: 'BEBÉ I · MIMI', atk: 'Burbujas', img: 'https://lh3.googleusercontent.com/aida/ALJJyrANGuAicuCXmRdq5ux94DqnGjAPQSy-lB81NhYVKQVAKsIveAC52M9n7x-FuQaEfDKUqjyiCFkgfUGgKbWDlkC8lp-hUol2lidEaPEuzHXDgrnUalSKPaVfDbWx6eOBd25iXeugtZIVVolqxK9jl4LwA_2g2zGgB9rkDRaenh1F0iDhKpOQYcbdA63sk1s1cQArI4B-1rqcvmMUo_nkxm9LHriBYDkaoKd02IKdYFwqgwElmyyxe58h' },
+            { name: 'TANEMON', stage: 'BEBÉ II · MIMI', atk: 'Semilla Ácida', img: 'https://lh3.googleusercontent.com/aida/ALJJyrANGuAicuCXmRdq5ux94DqnGjAPQSy-lB81NhYVKQVAKsIveAC52M9n7x-FuQaEfDKUqjyiCFkgfUGgKbWDlkC8lp-hUol2lidEaPEuzHXDgrnUalSKPaVfDbWx6eOBd25iXeugtZIVVolqxK9jl4LwA_2g2zGgB9rkDRaenh1F0iDhKpOQYcbdA63sk1s1cQArI4B-1rqcvmMUo_nkxm9LHriBYDkaoKd02IKdYFwqgwElmyyxe58h' },
+            { name: 'PALMON', stage: 'NOVATO · MIMI', atk: 'Hiedra Venenosa', img: 'https://lh3.googleusercontent.com/aida/ALJJyrANGuAicuCXmRdq5ux94DqnGjAPQSy-lB81NhYVKQVAKsIveAC52M9n7x-FuQaEfDKUqjyiCFkgfUGgKbWDlkC8lp-hUol2lidEaPEuzHXDgrnUalSKPaVfDbWx6eOBd25iXeugtZIVVolqxK9jl4LwA_2g2zGgB9rkDRaenh1F0iDhKpOQYcbdA63sk1s1cQArI4B-1rqcvmMUo_nkxm9LHriBYDkaoKd02IKdYFwqgwElmyyxe58h' },
+            { name: 'TOGEMON', stage: 'CAMPEÓN · MIMI', atk: 'Espinas Voladoras', img: 'https://lh3.googleusercontent.com/aida/ALJJyrCbY2SCR_Mdu849rROEuERUSME33eHwlL3rKUjs2yYMz8FCeqgi6wf6ivVgiAkDZ1GySJi4v-X6KQ6ibkXp33dB7R-rWvyNhw_ju7XrzvWUX711TA1Ga-S8fF6HIT1VyLK_i23oQKPXWq1wYygUWgtI9LPKrDlwco1edDiSyYsUPZHTOo29W05rvG8n_g7uPVlkCfS6ZBHx8Bk2ds0KaEGT4wzELw1V36WVFln8060Z4K2zeYY' },
+            { name: 'LILLYMON', stage: 'ULTRA · MIMI', atk: 'Cañón de Flores', img: 'https://lh3.googleusercontent.com/aida/ALJJyrCkenBL3VuxXK2N7D-G8_AgDXoSLqSdceIRUDZniCE1a3mrKiR9u1brS3qhACIGErqvRAUoBz5bI5APTO_FVugPJSadPzAhUr1uHUj_UMXrV22DUA6r5IDPDQzN3DaF1UDjc_bktNzEce29LUru3T4PBt42bXmGqYsRDmclkgpaj5aOnYpdkNm8cAwEW7NG3QSjEFj0DnH3qT9w6kSR8rhyDlUyBJf8HoOkA71WRQQLnbjA1-E' },
+            { name: 'ROSEMON', stage: 'MEGA · MIMI', atk: 'Látigo de Espinas', img: 'https://lh3.googleusercontent.com/aida/ALJJyrCkenBL3VuxXK2N7D-G8_AgDXoSLqSdceIRUDZniCE1a3mrKiR9u1brS3qhACIGErqvRAUoBz5bI5APTO_FVugPJSadPzAhUr1uHUj_UMXrV22DUA6r5IDPDQzN3DaF1UDjc_bktNzEce29LUru3T4PBt42bXmGqYsRDmclkgpaj5aOnYpdkNm8cAwEW7NG3QSjEFj0DnH3qT9w6kSR8rhyDlUyBJf8HoOkA71WRQQLnbjA1-E' }
+          ]
+        },
+        biyomon: {
+          kid: 'SORA',
+          stages: [
+            { name: 'NYOKIMON', stage: 'BEBÉ I · SORA', atk: 'Burbujas', img: 'https://lh3.googleusercontent.com/aida/ALJJyrAIjhwvXdbVO-wAAW1I7DivA_6DGoOu0jjN5PIwUE_aiqJ9yX0LRddSdS6pnRgipcb5h86AA4-cU6Fu_V6a3ayArq5zzb7w4LHUw888lJt9oA2Bvj4SnujC2ewh5Txsd_VSv_oOh0VOOwPYVwsqAdzU9jGzss1aXk5MzpDH1BJZ0nzkXBX2LNmN4jeOajdQMLskKJ3HE-AKkd7VlBfsL0vFL7_3LcIW3QLuwkOGB2A47wZpgxf2qbrUFA' },
+            { name: 'YOKOMON', stage: 'BEBÉ II · SORA', atk: 'Burbujas', img: 'https://lh3.googleusercontent.com/aida/ALJJyrAIjhwvXdbVO-wAAW1I7DivA_6DGoOu0jjN5PIwUE_aiqJ9yX0LRddSdS6pnRgipcb5h86AA4-cU6Fu_V6a3ayArq5zzb7w4LHUw888lJt9oA2Bvj4SnujC2ewh5Txsd_VSv_oOh0VOOwPYVwsqAdzU9jGzss1aXk5MzpDH1BJZ0nzkXBX2LNmN4jeOajdQMLskKJ3HE-AKkd7VlBfsL0vFL7_3LcIW3QLuwkOGB2A47wZpgxf2qbrUFA' },
+            { name: 'BIYOMON', stage: 'NOVATO · SORA', atk: 'Fuego Mágico', img: 'https://lh3.googleusercontent.com/aida/ALJJyrAIjhwvXdbVO-wAAW1I7DivA_6DGoOu0jjN5PIwUE_aiqJ9yX0LRddSdS6pnRgipcb5h86AA4-cU6Fu_V6a3ayArq5zzb7w4LHUw888lJt9oA2Bvj4SnujC2ewh5Txsd_VSv_oOh0VOOwPYVwsqAdzU9jGzss1aXk5MzpDH1BJZ0nzkXBX2LNmN4jeOajdQMLskKJ3HE-AKkd7VlBfsL0vFL7_3LcIW3QLuwkOGB2A47wZpgxf2qbrUFA' },
+            { name: 'BIRDRAMON', stage: 'CAMPEÓN · SORA', atk: 'Alas Meteoro', img: 'https://lh3.googleusercontent.com/aida/ALJJyrCzIdnikMLeeTTUHQzH0w6lUvKAoZ02UL77cBJ5YdB8oMwMUO4TZXjmdMLnIht-BcdqCo0gF_zst3H4nsp1DGRS0q3IgVvZs4u3NMpYUwIF0Uln6BFYpxWE37m_m7yZTa0jTxkxquYHZsw1OcMhGhxoHYyBPa5J6K_t5w4rhbAtPVq1vQZIkSl14UQh0yrjeD-wC9YATwS3qaiGxYbcjd_bQtBifiHAg7IIyMi7NfirEgE4mxJQ' },
+            { name: 'GARUDAMON', stage: 'ULTRA · SORA', atk: 'Ala de Sombras', img: 'https://lh3.googleusercontent.com/aida/ALJJyrC0ZwGa1aWJvgfj2nxrt7XAIsDno2XOijlcOIkBMXVNZZzHiHOd2iVIBHacQzmE7akHfPj_zpmAuMEiOHleEZLClI1iXtcKMbsow4rhBS98RVQoGruv40lchjpQOTlUspunFFC2uF7P-bUxoBY5AvX06JmK8YtVL1Nvtazbby8-X6VuBZBxsUykEgvy72fHS6aTteIGEPh9fdZ4Iv4zJ3rt7mWQN6yRb9Z-Jsfo-zl7Xkg9liyRTw' },
+            { name: 'PHOENIXMON', stage: 'MEGA · SORA', atk: 'Explosión Solar', img: 'https://lh3.googleusercontent.com/aida/ALJJyrC0ZwGa1aWJvgfj2nxrt7XAIsDno2XOijlcOIkBMXVNZZzHiHOd2iVIBHacQzmE7akHfPj_zpmAuMEiOHleEZLClI1iXtcKMbsow4rhBS98RVQoGruv40lchjpQOTlUspunFFC2uF7P-bUxoBY5AvX06JmK8YtVL1Nvtazbby8-X6VuBZBxsUykEgvy72fHS6aTteIGEPh9fdZ4Iv4zJ3rt7mWQN6yRb9Z-Jsfo-zl7Xkg9liyRTw' }
+          ]
+        },
+        tentomon: {
+          kid: 'IZZY',
+          stages: [
+            { name: 'PABUMON', stage: 'BEBÉ I · IZZY', atk: 'Burbujas', img: 'https://lh3.googleusercontent.com/aida/ALJJyrCsOZKGmX3FjIrjpOKn39nmwlHTW-dFJszWdky8UUHsm3u-vpf3p-IU7zbKqW1GCUMAFDhvc3r6Z0PLd7VubOhGSOxSUhyHQQ7o64-klRvisg16kst6IIKjZeK2rd7R3Mh-J0bZlBmWWpBRoQt5I_JkCkeJDeY0WC-zUCO-J642AQ8xvJLFko5w2Lscq8CMkJw_NeKHf2WFrlb2A2uFKZwktu7uPXH7q1F0AXe4mKTGse0L564hMEF7NnU' },
+            { name: 'MOTIMON', stage: 'BEBÉ II · IZZY', atk: 'Burbujas', img: 'https://lh3.googleusercontent.com/aida/ALJJyrCsOZKGmX3FjIrjpOKn39nmwlHTW-dFJszWdky8UUHsm3u-vpf3p-IU7zbKqW1GCUMAFDhvc3r6Z0PLd7VubOhGSOxSUhyHQQ7o64-klRvisg16kst6IIKjZeK2rd7R3Mh-J0bZlBmWWpBRoQt5I_JkCkeJDeY0WC-zUCO-J642AQ8xvJLFko5w2Lscq8CMkJw_NeKHf2WFrlb2A2uFKZwktu7uPXH7q1F0AXe4mKTGse0L564hMEF7NnU' },
+            { name: 'TENTOMON', stage: 'NOVATO · IZZY', atk: 'Súper Trueno', img: 'https://lh3.googleusercontent.com/aida/ALJJyrCsOZKGmX3FjIrjpOKn39nmwlHTW-dFJszWdky8UUHsm3u-vpf3p-IU7zbKqW1GCUMAFDhvc3r6Z0PLd7VubOhGSOxSUhyHQQ7o64-klRvisg16kst6IIKjZeK2rd7R3Mh-J0bZlBmWWpBRoQt5I_JkCkeJDeY0WC-zUCO-J642AQ8xvJLFko5w2Lscq8CMkJw_NeKHf2WFrlb2A2uFKZwktu7uPXH7q1F0AXe4mKTGse0L564hMEF7NnU' },
+            { name: 'KABUTERIMON', stage: 'CAMPEÓN · IZZY', atk: 'Electro Shocker', img: 'https://lh3.googleusercontent.com/aida/ALJJyrBdheSFTtxK-j0TUl8lyqk_OKhYu8LOn-eIVSVR4EO6Lwxwg_mjH2zEBJ3yfuDL72RBHnvMPphxMLcINbhPk5tX1Lx5fRORmWSwVbOVpg3sIqYRDXGrNAUtTjUTg8sqH4yZ981ejCxSN-YRCpgEnn10GArSpG_teERegw1p8ELGFBdPahikJEZGFdmHy82hfen_ZqPbgsIN5isPP2nsbzpP-HcvG2lJRYuzPTxrYK9sGuAEZ5Go1TtE' },
+            { name: 'MEGAKABUTERIMON', stage: 'ULTRA · IZZY', atk: 'Cuerno Destructor', img: 'https://lh3.googleusercontent.com/aida/ALJJyrDRdKS-qXskMfuoe8ihSBtcy25RDOvJjYzkUX8paoSW6_-Fv4bH1ANUVLQyeOxw0QmEP8TUSjvZsHsPX-jfk7oXcHWBNi4JN9kQR6DZlDX6pDZ6pzawyi_3OM9_1QIo1KPKxTtIyAY0KzIDpDxVWoCxL6HhHbLhb17OG5hYeAgqKF6ii2nE2RbtvkR_ntKftkFXEnxd1k9n6gyNEaID-sDydHDp0OZv9GxDevu3jmT41PQzXtLgLXZKZ3rgwh0' },
+            { name: 'HERCULESKABUTERIMON', stage: 'MEGA · IZZY', atk: 'Mega Electro', img: 'https://lh3.googleusercontent.com/aida/ALJJyrDRdKS-qXskMfuoe8ihSBtcy25RDOvJjYzkUX8paoSW6_-Fv4bH1ANUVLQyeOxw0QmEP8TUSjvZsHsPX-jfk7oXcHWBNi4JN9kQR6DZlDX6pDZ6pzawyi_3OM9_1QIo1KPKxTtIyAY0KzIDpDxVWoCxL6HhHbLhb17OG5hYeAgqKF6ii2nE2RbtvkR_ntKftkFXEnxd1k9n6gyNEaID-sDydHDp0OZv9GxDevu3jmT41PQzXtLgLXZKZ3rgwh0' }
+          ]
+        },
+        gomamon: {
+          kid: 'JOE',
+          stages: [
+            { name: 'PICHIMON', stage: 'BEBÉ I · JOE', atk: 'Burbujas', img: 'https://lh3.googleusercontent.com/aida/ALJJyrA8_9pjjVg1PxTowtPVV3-ar6DoRoTaSs0230hddZblg077hbvr6kt1Tl65_VE-faqILEQUfS1CsDT-hm_Y9ZjV4FSV1e45Oyd0-Eb46UtrsbL1HCZ2BpdgbCMrdirKEbeCxXy91kZdcSoTrkztfW04t-nYmXJCNW03hJRPdNu4mPeolNBLYU0e6XxFhcMt4EZ9GuyWNt_QLIw15FjYMOgCe0oQw_Jk_XeF-SMjbbA69eOBjHXbIGZI' },
+            { name: 'BUKAMON', stage: 'BEBÉ II · JOE', atk: 'Burbujas', img: 'https://lh3.googleusercontent.com/aida/ALJJyrA8_9pjjVg1PxTowtPVV3-ar6DoRoTaSs0230hddZblg077hbvr6kt1Tl65_VE-faqILEQUfS1CsDT-hm_Y9ZjV4FSV1e45Oyd0-Eb46UtrsbL1HCZ2BpdgbCMrdirKEbeCxXy91kZdcSoTrkztfW04t-nYmXJCNW03hJRPdNu4mPeolNBLYU0e6XxFhcMt4EZ9GuyWNt_QLIw15FjYMOgCe0oQw_Jk_XeF-SMjbbA69eOBjHXbIGZI' },
+            { name: 'GOMAMON', stage: 'NOVATO · JOE', atk: 'Peces Marchando', img: 'https://lh3.googleusercontent.com/aida/ALJJyrA8_9pjjVg1PxTowtPVV3-ar6DoRoTaSs0230hddZblg077hbvr6kt1Tl65_VE-faqILEQUfS1CsDT-hm_Y9ZjV4FSV1e45Oyd0-Eb46UtrsbL1HCZ2BpdgbCMrdirKEbeCxXy91kZdcSoTrkztfW04t-nYmXJCNW03hJRPdNu4mPeolNBLYU0e6XxFhcMt4EZ9GuyWNt_QLIw15FjYMOgCe0oQw_Jk_XeF-SMjbbA69eOBjHXbIGZI' },
+            { name: 'IKKAKUMON', stage: 'CAMPEÓN · JOE', atk: 'Torpedo Arpón', img: 'https://lh3.googleusercontent.com/aida/ALJJyrBuflPVx5_vr83NfAShO62QmNgjrtNHcpNlh2Y51_FGzcneQ0b6KGVrNFZgY-visREW0N_nJrx-dPhmIrkVg_YQEb75qQF2R07K57Y51LHo8bqHiWq42nZRtaQ0puU2jQWdGiMEVF1B8N0U62GbSJhuQsqj2a7JvM1tgA5f4eW30k7nPI10uUNnDv-kunn_ZUB9AUFtHf25ctPoLPIiWPesRylGt_0SJAC8UqKHJ_u_odyYKMS_' },
+            { name: 'ZUDOMON', stage: 'ULTRA · JOE', atk: 'Martillo Vulcano', img: 'https://lh3.googleusercontent.com/aida/ALJJyrCNmCbYT4aVSfjbzXYpFdwUcSfJf6_gplzx8BmGhPTYAeK2LKB_iXnvlxGv7-sDX8TxLEdFJ9IqB4y1nt9MCvEXbiV5l9c6ib-0yddMX9uyRVKth5d3J34Bdq4PVoKLYSDU9l6e1pnvy7QKgaUrXze-mmIK5-da0bG0i0lxHo4bTUEuWTEpOCVEE-9bBbLB4xHKPYLmCn2aT_sPfwvjcEdx-zTdKcDrcn6870C7SR1sgL_i3KY' },
+            { name: 'VIKEMON', stage: 'MEGA · JOE', atk: 'Ventisca Ártica', img: 'https://lh3.googleusercontent.com/aida/ALJJyrCNmCbYT4aVSfjbzXYpFdwUcSfJf6_gplzx8BmGhPTYAeK2LKB_iXnvlxGv7-sDX8TxLEdFJ9IqB4y1nt9MCvEXbiV5l9c6ib-0yddMX9uyRVKth5d3J34Bdq4PVoKLYSDU9l6e1pnvy7QKgaUrXze-mmIK5-da0bG0i0lxHo4bTUEuWTEpOCVEE-9bBbLB4xHKPYLmCn2aT_sPfwvjcEdx-zTdKcDrcn6870C7SR1sgL_i3KY' }
+          ]
+        },
+        patamon: {
+          kid: 'T.K.',
+          stages: [
+            { name: 'POYOMON', stage: 'BEBÉ I · T.K.', atk: 'Burbujas', img: 'https://lh3.googleusercontent.com/aida/ALJJyrDFOt2R2TBvun_ubrgmy7ApauVkYG_WwDcYGMooxrm83wttO0iPehstg9XJg4N4P2FCX08TaaaALeCqeqP1WyxalaPcSpSRHSfzeGRn-4B8sX0UhpDHn3hPv-YU4GpKvZXENcy2h_jIRwott5KBpz-2X4zieJqvlrlOSPuXi1dhuHmuMsQ7eV2tZmHuS08mDld_ggAQ4NX8TEq-szwihZFGNjwOWURT9UuQArNs7HXhYCWhVTqp_CceQQ' },
+            { name: 'TOKOMON', stage: 'BEBÉ II · T.K.', atk: 'Mordisco', img: 'https://lh3.googleusercontent.com/aida/ALJJyrDFOt2R2TBvun_ubrgmy7ApauVkYG_WwDcYGMooxrm83wttO0iPehstg9XJg4N4P2FCX08TaaaALeCqeqP1WyxalaPcSpSRHSfzeGRn-4B8sX0UhpDHn3hPv-YU4GpKvZXENcy2h_jIRwott5KBpz-2X4zieJqvlrlOSPuXi1dhuHmuMsQ7eV2tZmHuS08mDld_ggAQ4NX8TEq-szwihZFGNjwOWURT9UuQArNs7HXhYCWhVTqp_CceQQ' },
+            { name: 'PATAMON', stage: 'NOVATO · T.K.', atk: 'Burbuja de Aire', img: 'https://lh3.googleusercontent.com/aida/ALJJyrDFOt2R2TBvun_ubrgmy7ApauVkYG_WwDcYGMooxrm83wttO0iPehstg9XJg4N4P2FCX08TaaaALeCqeqP1WyxalaPcSpSRHSfzeGRn-4B8sX0UhpDHn3hPv-YU4GpKvZXENcy2h_jIRwott5KBpz-2X4zieJqvlrlOSPuXi1dhuHmuMsQ7eV2tZmHuS08mDld_ggAQ4NX8TEq-szwihZFGNjwOWURT9UuQArNs7HXhYCWhVTqp_CceQQ' },
+            { name: 'ANGEMON', stage: 'CAMPEÓN · T.K.', atk: 'Puño del Destino', img: 'https://lh3.googleusercontent.com/aida/ALJJyrBz_1R_Q8xFyUSi2SkjBzY7uYORFY9GEe6qY4AGbD8mLPGJkQztTF1Sjk86ubqc4_NJEU9LiSPODu9Dpi-ETxMllZAZUM2US5BUP_59ttCrFrXIYg-xd2XmxUzXv4OXq4EritnCNxeB25Ywlqrk2Q4AinVB1uiScPxyCkJWU0oR1lHWg_MunAtUd-qUX2-5CjnVveF_uIGZ81K6Sy6Vz7e5nzBU5CiZJGX3yJJ1-zK4ox2cXfw' },
+            { name: 'MAGNAANGEMON', stage: 'ULTRA · T.K.', atk: 'Puerta del Destino', img: 'https://lh3.googleusercontent.com/aida/ALJJyrBz_1R_Q8xFyUSi2SkjBzY7uYORFY9GEe6qY4AGbD8mLPGJkQztTF1Sjk86ubqc4_NJEU9LiSPODu9Dpi-ETxMllZAZUM2US5BUP_59ttCrFrXIYg-xd2XmxUzXv4OXq4EritnCNxeB25Ywlqrk2Q4AinVB1uiScPxyCkJWU0oR1lHWg_MunAtUd-qUX2-5CjnVveF_uIGZ81K6Sy6Vz7e5nzBU5CiZJGX3yJJ1-zK4ox2cXfw' },
+            { name: 'SERAPHIMON', stage: 'MEGA · T.K.', atk: 'Siete Cielos', img: 'https://lh3.googleusercontent.com/aida/ALJJyrBz_1R_Q8xFyUSi2SkjBzY7uYORFY9GEe6qY4AGbD8mLPGJkQztTF1Sjk86ubqc4_NJEU9LiSPODu9Dpi-ETxMllZAZUM2US5BUP_59ttCrFrXIYg-xd2XmxUzXv4OXq4EritnCNxeB25Ywlqrk2Q4AinVB1uiScPxyCkJWU0oR1lHWg_MunAtUd-qUX2-5CjnVveF_uIGZ81K6Sy6Vz7e5nzBU5CiZJGX3yJJ1-zK4ox2cXfw' }
+          ]
+        },
+        gatomon: {
+          kid: 'KARI',
+          stages: [
+            { name: 'SNOWBOTAMON', stage: 'BEBÉ I · KARI', atk: 'Nieve', img: 'https://lh3.googleusercontent.com/aida/ALJJyrDvQUyrwqq6OhZ3_hYSfHrbtRK_xaUh7LAhjbeZBD9_0G4uE3GAhiJIJFO_-N3v4QWhhhoISPwo-xpwUBhkk6lcuoak8Fi0C7B7f5rn2DYRt3wKeABm56CylOXHD2PRBm9r4lU6CQZGez9oyLnoiXDe2c9rg_7EERXpQMX_UrrwmMrTBm95RBAvpP55rgbgkZqDLsUHdiOjIXFZW5vs6QI4dMpC1y_GXc-7YDYWqboBxtlzD5yIESHk' },
+            { name: 'NYAROMON', stage: 'BEBÉ II · KARI', atk: 'Cola Látigo', img: 'https://lh3.googleusercontent.com/aida/ALJJyrDvQUyrwqq6OhZ3_hYSfHrbtRK_xaUh7LAhjbeZBD9_0G4uE3GAhiJIJFO_-N3v4QWhhhoISPwo-xpwUBhkk6lcuoak8Fi0C7B7f5rn2DYRt3wKeABm56CylOXHD2PRBm9r4lU6CQZGez9oyLnoiXDe2c9rg_7EERXpQMX_UrrwmMrTBm95RBAvpP55rgbgkZqDLsUHdiOjIXFZW5vs6QI4dMpC1y_GXc-7YDYWqboBxtlzD5yIESHk' },
+            { name: 'SALAMON', stage: 'NOVATO · KARI', atk: 'Aullido', img: 'https://lh3.googleusercontent.com/aida/ALJJyrDvQUyrwqq6OhZ3_hYSfHrbtRK_xaUh7LAhjbeZBD9_0G4uE3GAhiJIJFO_-N3v4QWhhhoISPwo-xpwUBhkk6lcuoak8Fi0C7B7f5rn2DYRt3wKeABm56CylOXHD2PRBm9r4lU6CQZGez9oyLnoiXDe2c9rg_7EERXpQMX_UrrwmMrTBm95RBAvpP55rgbgkZqDLsUHdiOjIXFZW5vs6QI4dMpC1y_GXc-7YDYWqboBxtlzD5yIESHk' },
+            { name: 'GATOMON', stage: 'CAMPEÓN · KARI', atk: 'Golpe de Gato', img: 'https://lh3.googleusercontent.com/aida/ALJJyrDvQUyrwqq6OhZ3_hYSfHrbtRK_xaUh7LAhjbeZBD9_0G4uE3GAhiJIJFO_-N3v4QWhhhoISPwo-xpwUBhkk6lcuoak8Fi0C7B7f5rn2DYRt3wKeABm56CylOXHD2PRBm9r4lU6CQZGez9oyLnoiXDe2c9rg_7EERXpQMX_UrrwmMrTBm95RBAvpP55rgbgkZqDLsUHdiOjIXFZW5vs6QI4dMpC1y_GXc-7YDYWqboBxtlzD5yIESHk' },
+            { name: 'ANGEWOMON', stage: 'ULTRA · KARI', atk: 'Flecha Celestial', img: 'https://lh3.googleusercontent.com/aida/ALJJyrCzLvNKcl9zYQFmLH3t1rryg_Go7ElueqfBn-5J0BQOZyt3TW-vSWSNb0cAHuRzxGFs_pU3vu4fkbK5AQ00icO6RvFcGW7xeHvHaAeGMTPY4ZJHEoPuKrrfZRxhWsxh-X75Dl9bWvOp3wsuCcdp1VBWFO7wFsQiyFMTOxNXku0jL6Ufyzoy0jsG7iuW6h1TkPwhnyanHsXZi1jTGMghdKCePehC6b2qxIGRnyY2VEhHNDjurSASug' },
+            { name: 'MAGNADRAMON', stage: 'MEGA · KARI', atk: 'Fuego Sagrado', img: 'https://lh3.googleusercontent.com/aida/ALJJyrCzLvNKcl9zYQFmLH3t1rryg_Go7ElueqfBn-5J0BQOZyt3TW-vSWSNb0cAHuRzxGFs_pU3vu4fkbK5AQ00icO6RvFcGW7xeHvHaAeGMTPY4ZJHEoPuKrrfZRxhWsxh-X75Dl9bWvOp3wsuCcdp1VBWFO7wFsQiyFMTOxNXku0jL6Ufyzoy0jsG7iuW6h1TkPwhnyanHsXZi1jTGMghdKCePehC6b2qxIGRnyY2VEhHNDjurSASug' }
+          ]
+        }
+      };
+
+      var currentLineKey = 'gabumon';
+      var previewImg = document.getElementById('line-preview-img');
+      var stageBadge = document.getElementById('line-stage-badge');
+      var nameEl = document.getElementById('line-evo-name');
+      var attackEl = document.getElementById('line-evo-attack');
+      var statusEl = document.getElementById('line-status');
+      var lineTabs = document.querySelectorAll('.line-tab');
+      var stageBtns = document.querySelectorAll('.stage-btn');
+
+      function selectStage(idx) {
+        var line = LINES[currentLineKey];
+        var item = line.stages[idx];
+        stageBtns.forEach(function (b, i) {
+          if (i === idx) {
+            b.classList.remove('bg-light-surface-container', 'text-light-on-surface');
+            b.classList.add('bg-light-primary', 'text-light-on-primary');
+          } else {
+            b.classList.remove('bg-light-primary', 'text-light-on-primary');
+            b.classList.add('bg-light-surface-container', 'text-light-on-surface');
+          }
+        });
+        previewImg.src = item.img;
+        previewImg.alt = item.name;
+        stageBadge.textContent = item.stage;
+        nameEl.textContent = item.name;
+        attackEl.textContent = 'Ataque: ' + item.atk;
+        statusEl.textContent = item.name + ' (' + line.kid + '): ' + item.atk + '.';
+      }
+
+      lineTabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          lineTabs.forEach(function (t) {
+            t.classList.remove('bg-light-primary', 'text-light-on-primary');
+            t.classList.add('bg-light-surface-container', 'text-light-on-surface');
+          });
+          tab.classList.remove('bg-light-surface-container', 'text-light-on-surface');
+          tab.classList.add('bg-light-primary', 'text-light-on-primary');
+
+          currentLineKey = tab.getAttribute('data-line');
+          var line = LINES[currentLineKey];
+          stageBtns.forEach(function (btn, idx) {
+            btn.querySelector('span').textContent = (idx + 1) + '. ' + line.stages[idx].name;
+          });
+          selectStage(2);
+        });
+      });
+
+      stageBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var idx = parseInt(btn.getAttribute('data-idx'), 10);
+          selectStage(idx);
+        });
+      });
+    })();
+  </script>
+
+
+</body></html>

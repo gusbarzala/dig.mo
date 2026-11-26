@@ -1,0 +1,293 @@
+<!DOCTYPE html><html lang="es"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIG.MON — Escudo: 8 Emblemas</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="2292ee7c6c97a428===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'arcade-yellow': '#FFD400',
+        'digivice-orange': '#FF6B00',
+        'gabumon-blue': '#005CBA',
+        'ink-black': '#1A1600',
+        'light-primary': '#005CBA',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#D7E3FF',
+        'light-on-primary-container': '#001B3E',
+        'light-secondary': '#FF6B00',
+        'light-on-secondary': '#1A0800',
+        'light-secondary-container': '#FFDBCC',
+        'light-on-secondary-container': '#351000',
+        'light-surface': '#FFD400',
+        'light-on-surface': '#1A1600',
+        'light-surface-container': '#FFF0C6',
+        'light-surface-container-low': '#FFE177',
+        'light-surface-container-high': '#FFFBFF',
+        'light-on-surface-variant': '#3B2F00',
+        'light-outline': '#1A1600',
+        'light-outline-variant': '#715D00',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'dark-primary': '#7BABFF',
+        'dark-on-primary': '#001B3E',
+        'dark-primary-container': '#00458E',
+        'dark-on-primary-container': '#D7E3FF',
+        'dark-secondary': '#FF8C52',
+        'dark-on-secondary': '#351000',
+        'dark-secondary-container': '#7A3000',
+        'dark-on-secondary-container': '#FFDBCC',
+        'dark-surface': '#1A1600',
+        'dark-on-surface': '#FFE177',
+        'dark-surface-container': '#231B00',
+        'dark-surface-container-low': '#201C02',
+        'dark-surface-container-high': '#3B2F00',
+        'dark-on-surface-variant': '#EDE3B7',
+        'dark-outline': '#FFD400',
+        'dark-outline-variant': '#715D00',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+      },
+      borderRadius: {
+        'none': '0px',
+        'sm': '2px',
+        'DEFAULT': '4px',
+        'md': '8px',
+        'lg': '12px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '40px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Press Start 2P"', 'sans-serif'],
+        'headline': ['"Press Start 2P"', 'sans-serif'],
+        'title': ['"Poppins"', 'sans-serif'],
+        'body': ['"Poppins"', 'sans-serif'],
+        'label': ['"Poppins"', 'sans-serif'],
+        'mono': ['"Spline Sans Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '52px', letterSpacing: '1px', fontWeight: '400' }],
+        'display-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '0.5px', fontWeight: '400' }],
+        'headline-lg': ['24px', { lineHeight: '34px', letterSpacing: '0.5px', fontWeight: '400' }],
+        'headline-lg-mobile': ['18px', { lineHeight: '26px', letterSpacing: '0.5px', fontWeight: '400' }],
+        'title-lg': ['16px', { lineHeight: '24px', letterSpacing: '0.25px', fontWeight: '400' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '700' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '500' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '500' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.5px', fontWeight: '400' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.5px', fontWeight: '700' }],
+        'mono-md': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '600' }],
+      },
+      transitionDuration: {
+        'button-press': '80ms',
+        'surface-enter': '200ms',
+      },
+      transitionDelay: {
+        'button-press': '0ms',
+        'surface-enter': '0ms',
+      },
+      transitionTimingFunction: {
+        'button-press': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&amp;family=Press+Start+2P&amp;family=Spline+Sans+Mono:wght@600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      line-height: 1 !important;
+      box-sizing: content-box;
+      overflow: hidden;
+      white-space: nowrap;
+      direction: ltr;
+      vertical-align: middle;
+    }
+    .arcade-shadow { box-shadow: 4px 4px 0px #1A1600; }
+    .arcade-shadow-sm { box-shadow: 3px 3px 0px #1A1600; }
+    .arcade-shadow:active, .arcade-shadow-sm:active { box-shadow: 1px 1px 0px #1A1600; }
+  </style>
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased">
+  <div class="min-h-screen w-full max-w-md mx-auto px-page-margin py-gutter-md flex flex-col justify-between gap-gutter-md">
+
+    <!-- Top contextual header -->
+    <header class="flex items-center justify-between gap-gutter-sm">
+      <a href="../batalla/PantallaDeBatalla.html" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" aria-label="Volver a batalla" class="inline-flex items-center justify-center w-11 h-11 bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow-sm transition-transform duration-button-press ease-button-press hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-light-outline">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </a>
+
+      <div class="inline-flex items-center gap-gutter-xs px-gutter-md py-gutter-xs bg-light-surface-container border-4 border-light-outline rounded arcade-shadow-sm">
+        <span class="font-mono text-mono-md text-light-on-surface tabular-nums uppercase" data-design-text-token="mono-md">ESCUDO · 8 JOYAS</span>
+      </div>
+
+      <button id="sound-toggle" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" type="button" aria-label="Alternar sonido" class="inline-flex items-center justify-center w-11 h-11 bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow-sm transition-transform duration-button-press ease-button-press hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-light-outline">
+        <span id="sound-icon" class="material-symbols-outlined">volume_up</span>
+      </button>
+    </header>
+
+    <!-- 8 Children's Crests / Jewels -->
+    <main class="flex-1 flex flex-col gap-gutter-md">
+      <div class="flex flex-col gap-gutter-xs">
+        <h1 data-design-text-token="headline-lg-mobile" class="font-headline text-headline-lg-mobile text-light-on-surface uppercase">LAS 8 JOYAS</h1>
+        <p data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface-variant text-pretty">
+          Emblemas de los 8 Niños Elegidos. Toca una joya para activar su escudo.
+        </p>
+      </div>
+
+      <!-- Uploaded Crests Showcase -->
+      <figure class="bg-light-surface-container-high border-4 border-light-outline rounded arcade-shadow p-gutter-sm">
+        <img src="https://lh3.googleusercontent.com/aida/ALJJyrAtZ7yx7y6fcwt32l_Dihbc4n2GTfoIf-PZRJ_v_n6BscL7YXDvWrSGMcxed-YhsJZD27CVU98uFyb4Og9yRql_RRyEwxqBvcgu21um2UuZWtW3VhAK4MpS65DVqmBP7L6TOUP5eOa5zVFPlrQPXP6yIgTjtmxGY5zpdHQ_wOG3asGZu5LZe9M-6GnVF7J8_0CtHoOvcKdd-WWxms5S1K_hOt-Bt0WFPRLxfcUj5Ha1Nfi2XNERvNvBdo4" alt="Joyas y emblemas de los 8 Niños Elegidos" class="w-full h-44 object-contain block rounded-sm" data-stitch-original-src="33e45abb6388e322===../../uploads/61mf9hqvk8l-_ac_uy1000_-437207.jpg">
+      </figure>
+
+      <section class="grid grid-cols-2 gap-gutter-sm">
+        <button type="button" data-child="Tai" data-crest="Valor" data-boost="+25 DEF" class="crest-card bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow p-gutter-sm flex flex-col items-start gap-gutter-xs text-left transition-transform duration-button-press ease-button-press active:translate-x-0.5 active:translate-y-0.5">
+          <div class="flex items-center justify-between w-full gap-gutter-xs">
+            <div class="w-10 h-10 shrink-0 overflow-hidden rounded-sm border-2 border-light-outline bg-light-surface">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrCigtg8_fNLFKV3a5LW8_M4-8EVuHMDOIdYK6YXxoVYKfOuzGr0MkigwdWzFiLarVGm6KFxWSz7bDUnhGyhD6sEabcN6T4JOXmJH65ToGVKTfu5YofPs07zSwUH8duR3fIwOMFOHVu80BzMFoLP4VG-UrX8VGtiRxVuujNfJJYeTUewA1jwFrQPx3IJ7p28WjzoIpeXevjMx5IbRUS9QnMbVxDTbZ7E0VRdPBPhMN76srDsXg" alt="Emblema del Valor" class="w-full h-full object-cover block" data-stitch-original-src="d4ad3b09d165a3b8===../../images/crest_valor.jpg">
+            </div>
+            <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface-variant">TAI</span>
+          </div>
+          <span data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Valor</span>
+          <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary uppercase">+25 DEF</span>
+        </button>
+
+        <button type="button" data-child="Matt" data-crest="Amistad" data-boost="+25 DEF" class="crest-card bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow p-gutter-sm flex flex-col items-start gap-gutter-xs text-left transition-transform duration-button-press ease-button-press active:translate-x-0.5 active:translate-y-0.5">
+          <div class="flex items-center justify-between w-full gap-gutter-xs">
+            <div class="w-10 h-10 shrink-0 overflow-hidden rounded-sm border-2 border-light-outline bg-light-surface">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrCs44VHv1jIrEPqLfI_3AVrWEtjL8iPYZaTW8s_NWcqx6BtODJJkS3_JdEQ5oKU7juos-z9nXzCPfRK0qbC8RWPYlAhHnIreP3B3-hg3B6MGUiNUxHy6nOMhp8Gis4NjxyyO-ynFbkfqeBlXI0ttmTMgi9aApjE4tUUNde2hIK-MhR_jQGl58O8CdEiz04yjnGi2V1pHHR33JeZTwoDXwRuMs6qsXbci4JuOhGJ9EGR5Cyul0C7" alt="Emblema de la Amistad" class="w-full h-full object-cover block" data-stitch-original-src="6545bfcc0123754f===../../images/crest_amistad.jpg">
+            </div>
+            <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface-variant">MATT</span>
+          </div>
+          <span data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Amistad</span>
+          <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary uppercase">+25 DEF</span>
+        </button>
+
+        <button type="button" data-child="Sora" data-crest="Amor" data-boost="+20 PS" class="crest-card bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow p-gutter-sm flex flex-col items-start gap-gutter-xs text-left transition-transform duration-button-press ease-button-press active:translate-x-0.5 active:translate-y-0.5">
+          <div class="flex items-center justify-between w-full gap-gutter-xs">
+            <div class="w-10 h-10 shrink-0 overflow-hidden rounded-sm border-2 border-light-outline bg-light-surface">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrDv1GkbQUcc-_LAqaBf4xyb45FNvGrgB-gTyTU1Ohh6P55C55gVyNc2ex82UOFqw7Nt9-o2UZrI_d9k-BTHE5bOQBkIrbwwL5QqkY-SWzOvxAxhhHL0Ybhvvo6QmYD8zJUwkibrwNDhXNBv2iOkozqjup-BBmMHxjzgBQafBM9t0dF0iSup-kRGv8Zxd0tEURHdNwJanEY2wYYpxSnoS2109mpO5D0HFYXY2RP14GNp47rBoA" alt="Emblema del Amor" class="w-full h-full object-cover block" data-stitch-original-src="ceeca1823afcc277===../../images/crest_amor.jpg">
+            </div>
+            <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface-variant">SORA</span>
+          </div>
+          <span data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Amor</span>
+          <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary uppercase">+20 PS</span>
+        </button>
+
+        <button type="button" data-child="Izzy" data-crest="Conocimiento" data-boost="+20 PE" class="crest-card bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow p-gutter-sm flex flex-col items-start gap-gutter-xs text-left transition-transform duration-button-press ease-button-press active:translate-x-0.5 active:translate-y-0.5">
+          <div class="flex items-center justify-between w-full gap-gutter-xs">
+            <div class="w-10 h-10 shrink-0 overflow-hidden rounded-sm border-2 border-light-outline bg-light-surface">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrAyGnpKh-3uP2k3FOVHOSZT-q0EArbcMNDFybSvlrATLw6v7DZV4zO9_A1RgnWOTX0dqzRTkWA00c7NsUOuNvdaq3KU7ydmI7qLSbe-d7yDZeXweI_pKP1LkcVqRvcAXVqFuwA7EHGzl-x2V1kNsBxnq1Ef3Z9_X456ZHwqji6MQgC7q8L5FmiHg2-tYlOcwMG2r5EcB4wH9y1YIs7s6M5bmeTi83XsT1ekogznhFZgL0TKxgnPDwPzgy_ijQ" alt="Emblema del Conocimiento" class="w-full h-full object-cover block" data-stitch-original-src="e58b38f40e60cd14===../../images/crest_conocimiento.jpg">
+            </div>
+            <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface-variant">IZZY</span>
+          </div>
+          <span data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Conocimiento</span>
+          <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary uppercase">+20 PE</span>
+        </button>
+
+        <button type="button" data-child="Mimi" data-crest="Pureza" data-boost="+30 DEF" class="crest-card bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow p-gutter-sm flex flex-col items-start gap-gutter-xs text-left transition-transform duration-button-press ease-button-press active:translate-x-0.5 active:translate-y-0.5">
+          <div class="flex items-center justify-between w-full gap-gutter-xs">
+            <div class="w-10 h-10 shrink-0 overflow-hidden rounded-sm border-2 border-light-outline bg-light-surface">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrB5pYwAoFsjlRVAasRd0Wj-u4AQyf1FOGI7cPWP-ZuB3ixFJH8_gf_nr5pCWAFdQW95gaM11xZLfC3BjFGXTaPLOYU2Muiurfs7fr_bN-URP3iGbg3c87m2VP-Pqetqdigx1SbaXL8FkWjoq4ggL0LPgllohFkcXJvr7-IqH248o-6naGVexQ3uTlG6qauZl-WPyhEuWUx6OQSmKZ6P_VSPymjOirjSsWeHWz7HBicl219NiIx9" alt="Emblema de la Pureza" class="w-full h-full object-cover block" data-stitch-original-src="d2f47ca81198ede7===../../images/crest_pureza.jpg">
+            </div>
+            <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface-variant">MIMI</span>
+          </div>
+          <span data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Pureza</span>
+          <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary uppercase">+30 DEF</span>
+        </button>
+
+        <button type="button" data-child="Joe" data-crest="Sinceridad" data-boost="+30 DEF" class="crest-card bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow p-gutter-sm flex flex-col items-start gap-gutter-xs text-left transition-transform duration-button-press ease-button-press active:translate-x-0.5 active:translate-y-0.5">
+          <div class="flex items-center justify-between w-full gap-gutter-xs">
+            <div class="w-10 h-10 shrink-0 overflow-hidden rounded-sm border-2 border-light-outline bg-light-surface">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrCWYpkd92Mqnae0_8BZUhJ744SP2bP9HKz1J22793fnUcUtGYO7Hn6VyNVw0jcHvetf-e9RSNIbqFXQYFQcxF_j3B6235iJp1mpS3Qce9TTo0dqkfd39tncFaXrCBs7wW8hvqRHc9EFd5MsNDEOOjGBdjBT9OPgIMoPAybi6ysPHs27Ib6JV9wH1z9dLXdpgaDY1won2jNSELzvUfiZX3iMkX-L60eH9KT4caEGe6XSXDfHfmccuqkFZp0" alt="Emblema de la Sinceridad" class="w-full h-full object-cover block" data-stitch-original-src="41b2a87633966220===../../images/crest_sinceridad.jpg">
+            </div>
+            <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface-variant">JOE</span>
+          </div>
+          <span data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Sinceridad</span>
+          <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary uppercase">+30 DEF</span>
+        </button>
+
+        <button type="button" data-child="T.K." data-crest="Esperanza" data-boost="+40 ESCUDO" class="crest-card bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow p-gutter-sm flex flex-col items-start gap-gutter-xs text-left transition-transform duration-button-press ease-button-press active:translate-x-0.5 active:translate-y-0.5">
+          <div class="flex items-center justify-between w-full gap-gutter-xs">
+            <div class="w-10 h-10 shrink-0 overflow-hidden rounded-sm border-2 border-light-outline bg-light-surface">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrAiqxTTi3dAxTJuf88YcB1WWQy_4P4n17S45FGXR1ThBl2ekKu9_Lt21QPp6zvAGNYzNQBXAmp2Xq8ErkDbhMk7KZc7SZMVI3d-Bwh9dVF02rBRbT0rYF28jvhy1Gt5VEc-IPA_CAeQZbEX1-RXGaAaMWXJB1ULTQFvoCID8deSwQMbQHPE0VBqx8uOAe35Hmm0C8VKNdKxalwctGjeZwH45HKlgEPkQ0RNWLvaUtATkueiuFjGuhIxJA" alt="Emblema de la Esperanza" class="w-full h-full object-cover block" data-stitch-original-src="ef4861bc46cd33a9===../../images/crest_esperanza.jpg">
+            </div>
+            <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface-variant">T.K.</span>
+          </div>
+          <span data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Esperanza</span>
+          <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary uppercase">+40 ESCUDO</span>
+        </button>
+
+        <button type="button" data-child="Kari" data-crest="Luz" data-boost="+40 ESCUDO" class="crest-card bg-light-surface-container text-light-on-surface border-4 border-light-outline rounded arcade-shadow p-gutter-sm flex flex-col items-start gap-gutter-xs text-left transition-transform duration-button-press ease-button-press active:translate-x-0.5 active:translate-y-0.5">
+          <div class="flex items-center justify-between w-full gap-gutter-xs">
+            <div class="w-10 h-10 shrink-0 overflow-hidden rounded-sm border-2 border-light-outline bg-light-surface">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrCjr_ezsZr25Un5Qtqykf4T8N4_Gp4KIQ3-uR6J3dvtwpb3nxpzz6AN1s7GxoU-NRGZSeo_5nfkY0EuSZRcZpZgg4AWs6I4Uv7iDYzWpN9e652ryXdlJ85fUg3nrzbJ4pFc1fYcEGJdpvs3sbvdCBhtb_R6aVC5DiNiFSHTzF2_WQA8NkaxODrf9B4xVdGPEuT-zQe4jYXvaHFYmeYI9S1_9vizP5qrq6clNypJOtBA-fan" alt="Emblema de la Luz" class="w-full h-full object-cover block" data-stitch-original-src="a34dda23a4af12a6===../../images/crest_luz.jpg">
+            </div>
+            <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface-variant">KARI</span>
+          </div>
+          <span data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Luz</span>
+          <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary uppercase">+40 ESCUDO</span>
+        </button>
+      </section>
+    </main>
+
+    <!-- Status Footer -->
+    <footer aria-live="polite" class="bg-light-surface-container border-4 border-light-outline rounded arcade-shadow-sm px-gutter-md py-gutter-sm">
+      <p id="crest-status" data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface text-pretty">
+        Selecciona cualquiera de las 8 joyas para activar el escudo.
+      </p>
+    </footer>
+
+  </div>
+
+  <script>
+    (function () {
+      var soundBtn = document.getElementById('sound-toggle');
+      var soundIcon = document.getElementById('sound-icon');
+      var muted = false;
+      if (soundBtn && soundIcon) {
+        soundBtn.addEventListener('click', function () {
+          muted = !muted;
+          soundIcon.textContent = muted ? 'volume_off' : 'volume_up';
+        });
+      }
+
+      var statusEl = document.getElementById('crest-status');
+      var cards = document.querySelectorAll('.crest-card');
+      cards.forEach(function (card) {
+        card.addEventListener('click', function () {
+          cards.forEach(function (c) {
+            c.classList.remove('bg-light-primary-container');
+            c.classList.add('bg-light-surface-container');
+          });
+          card.classList.remove('bg-light-surface-container');
+          card.classList.add('bg-light-primary-container');
+
+          var child = card.getAttribute('data-child');
+          var crest = card.getAttribute('data-crest');
+          var boost = card.getAttribute('data-boost');
+          statusEl.textContent = '¡Joya de ' + crest + ' (' + child + ') activada! ' + boost + '.';
+        });
+      });
+    })();
+  </script>
+
+
+</body></html>
