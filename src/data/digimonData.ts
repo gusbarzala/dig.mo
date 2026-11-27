@@ -9,9 +9,6 @@ export const IMAGES = {
     'https://lh3.googleusercontent.com/aida/ALJJyrB0WKDIP9UNVQHVnbImNvtSZ4wWqUyeWtZIRPKySbq8rKdcDoqJS_EGoyRuagb_HCT87hMIgWh-tgh2c-52RRofyeE1GRfM3QVvAO3Rajr5pBfxt9R4wBK-MmGFjqUzShXQcAExwVrL463w-gyZTZveGq7m-DmZAWl2NbV7xD6VtS3OjZOKnzEDXj8camRhhcmzL5lVxTqqt2EvVyV_GJRQb5jwd1mC9o65mV9kg3fn9nmXEsEY8Xo',
   greymon:
     'https://lh3.googleusercontent.com/aida/ALJJyrCnjM20kGi_2f-OjerHGuI3TAQ-AHKciD6dbQsZoj7kESny7WTQkCAVFCSdfTlJvRYq760G-eqf6FY74M9_AmJ8xVqdXbEk4cvTxugSffHyR3QZHGu19Io1gx7skC-YHnKgtKNPBY66VTbYJv2LnivDlEaXI1miSiu041ezCjsYD3j1KySHNdviUk5ernaiYT3xHDIcMXdErFqFFcaHYB_lGCPy7PMyspersUkyU_ELbzVOOsw',
-  metalGreymon: metalGreymonImg,
-  warGreymon: warGreymonImg,
-  omnimon: omnimonImg,
   gabumon:
     'https://lh3.googleusercontent.com/aida/ALJJyrD7XyDkn-VF-LqjuhLeAQTWsOnkK5msBs_9eeQ-RwNNt3piGNjZJtQOiQgHC-MkoFn5WmGy4grOnoNBieXkvGFBff2sPedT1ihk_2uzVk5uTom0ponYznwIrSGQsPfaubOa5yi_oGVO5iih7PVibWg3K9L0LwfNZQ9-GEUBDrkH5bZ3HSfrtLeH8hvbeReLPhWJ7PffdJ58-ySBq0veD1MmRx1dmKqjkb14IFhWpUcF60liMkWMaq0',
   garurumon:
