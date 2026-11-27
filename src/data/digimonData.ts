@@ -1,3 +1,7 @@
+import metalGreymonImg from '../assets/images/metalgreymon_evo_1795734127755.jpg';
+import warGreymonImg from '../assets/images/wargreymon_evo_1795734128295.jpg';
+import omnimonImg from '../assets/images/omnimon_evo_1795734128959.jpg';
+
 export const IMAGES = {
   taiAgumonHero:
     'https://lh3.googleusercontent.com/aida/ALJJyrDD5cRPTpJhcNBiN2Ywv8KanoijaMNxYUECZe6op1TNGiOvXZq8GZWVnxgfYaxyVzO9EoKsp4gRFRVKU6HFn8wDGgT848a-uh_nnTWOV0QQT28MlbNvBKL59BDVm6aIKJS-9JCJvm-ib0rOG4uyiPk9w_AxUPA9x31qby_ICmr_jU2DxtHEexhCXmwHuXB3Jp6s93mbIDs8D6-ZccQ0vkQq__naWo43bQ8A-0_9oEr8OyI5BCOJJCraIw',
@@ -5,9 +9,9 @@ export const IMAGES = {
     'https://lh3.googleusercontent.com/aida/ALJJyrB0WKDIP9UNVQHVnbImNvtSZ4wWqUyeWtZIRPKySbq8rKdcDoqJS_EGoyRuagb_HCT87hMIgWh-tgh2c-52RRofyeE1GRfM3QVvAO3Rajr5pBfxt9R4wBK-MmGFjqUzShXQcAExwVrL463w-gyZTZveGq7m-DmZAWl2NbV7xD6VtS3OjZOKnzEDXj8camRhhcmzL5lVxTqqt2EvVyV_GJRQb5jwd1mC9o65mV9kg3fn9nmXEsEY8Xo',
   greymon:
     'https://lh3.googleusercontent.com/aida/ALJJyrCnjM20kGi_2f-OjerHGuI3TAQ-AHKciD6dbQsZoj7kESny7WTQkCAVFCSdfTlJvRYq760G-eqf6FY74M9_AmJ8xVqdXbEk4cvTxugSffHyR3QZHGu19Io1gx7skC-YHnKgtKNPBY66VTbYJv2LnivDlEaXI1miSiu041ezCjsYD3j1KySHNdviUk5ernaiYT3xHDIcMXdErFqFFcaHYB_lGCPy7PMyspersUkyU_ELbzVOOsw',
-  metalGreymon: '/src/assets/images/metalgreymon_evo_1795734127755.jpg',
-  warGreymon: '/src/assets/images/wargreymon_evo_1795734128295.jpg',
-  omnimon: '/src/assets/images/omnimon_evo_1795734128959.jpg',
+  metalGreymon: metalGreymonImg,
+  warGreymon: warGreymonImg,
+  omnimon: omnimonImg,
   gabumon:
     'https://lh3.googleusercontent.com/aida/ALJJyrD7XyDkn-VF-LqjuhLeAQTWsOnkK5msBs_9eeQ-RwNNt3piGNjZJtQOiQgHC-MkoFn5WmGy4grOnoNBieXkvGFBff2sPedT1ihk_2uzVk5uTom0ponYznwIrSGQsPfaubOa5yi_oGVO5iih7PVibWg3K9L0LwfNZQ9-GEUBDrkH5bZ3HSfrtLeH8hvbeReLPhWJ7PffdJ58-ySBq0veD1MmRx1dmKqjkb14IFhWpUcF60liMkWMaq0',
   garurumon:
